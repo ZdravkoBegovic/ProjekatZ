@@ -7,9 +7,9 @@ class MedicinskaSestra:public Osoblje
 private:
   Smena z;
 public:
-    MedicinskaSestra(smena x;)
+    MedicinskaSestra(smena x)
     {
-        z=x
+        z=x;
     }
    void promenaSmene(Smena a)
    {

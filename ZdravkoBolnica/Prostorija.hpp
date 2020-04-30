@@ -1,15 +1,18 @@
 #ifndef PROSTORIJA_HPP_INCLUDED
 #define PROSTORIJA_HPP_INCLUDED
+#include <iostream>
+using namespace std;
 #include "Krevet.hpp"
+
 class Prostorija
 {
 private:
 int brojKreveta;
 int brojSlobodnihKreveta;
 int brojZauzetihKreveta;
-Krevet k;
+Krevet K;
 public:
-    Prostorija( int w, int n, int l,stanje a, velicina b):Krevet(a,b)
+    Prostorija( int w, int n, int l, stanje h, velicina j):Krevet(h,j)
     {
      brojKreveta=w;
      brojSlobodnihKreveta=n;
