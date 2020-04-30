@@ -12,7 +12,7 @@ int brojSlobodnihKreveta;
 int brojZauzetihKreveta;
 Krevet K;
 public:
-    Prostorija( int w, int n, int l, stanje h, velicina j):Krevet(h,j)
+    Prostorija( int w, int n, int l, stanje h, velicina j):K(h,j)
     {
      brojKreveta=w;
      brojSlobodnihKreveta=n;
