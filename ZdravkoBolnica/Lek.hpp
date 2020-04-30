@@ -1,6 +1,6 @@
 #ifndef LEK_HPP_INCLUDED
 #define LEK_HPP_INCLUDED
-enum vrstaLeka(tableta,kapi,sirup,kapsula,vakcina)
+enum vrstaLeka{tableta,kapi,sirup,kapsula,vakcina}
 class Lek
 {
 private:

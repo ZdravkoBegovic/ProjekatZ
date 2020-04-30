@@ -17,17 +17,17 @@ public:
     }
     void zauzmiKrevet()
     {
-        if(s=1)
+        if(s=slobodan)
         {
-           s=0;
+           s=zauzet;
            cout<<"Krevet je zauzet";
         }
     }
     void oslobodiKrevet()
     {
-        if(s=0)
+        if(s=zauzet)
         {
-           s=;
+           s=slobodan;
            cout<<"Krevet je oslobodjen";
         }
     }

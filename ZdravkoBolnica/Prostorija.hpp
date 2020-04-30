@@ -1,6 +1,6 @@
 #ifndef PROSTORIJA_HPP_INCLUDED
 #define PROSTORIJA_HPP_INCLUDED
-#include Krevet
+#include "Krevet.hpp"
 class Prostorija
 {
 private:
