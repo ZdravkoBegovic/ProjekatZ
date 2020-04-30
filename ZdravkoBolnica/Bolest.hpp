@@ -10,7 +10,7 @@ tipBolesti a;
 podelaBolesti p;
 Lek k;
 public:
-    Bolest(tipBolesti v, podelaBolesti m):Lek()
+    Bolest(tipBolesti v, podelaBolesti m , int d, vrstaLeka c):Lek(d,c)
     {
         a=v;
         p=m;

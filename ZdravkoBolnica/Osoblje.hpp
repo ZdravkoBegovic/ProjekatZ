@@ -4,6 +4,7 @@ enum pol {musko,zensko};
 class Osoblje
 {
 protected:
+string ime,prezime;
 int starost;
 pol c;
 int godineRadnogIskustva;

@@ -5,6 +5,7 @@ enum poll{musko1,zensko1};
 class Pacijent
 {
 private:
+string ime,prezime;
 int starost;
 poll a;
 Bolest b;

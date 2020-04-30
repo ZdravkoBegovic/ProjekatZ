@@ -1,4 +1,6 @@
 #include <iostream>
+using namespace std;
+
 #include "Bolest.hpp"
 #include "Cistacica.hpp"
 #include "Dijagnoza.hpp"
@@ -10,9 +12,10 @@
 #include "Pacijent.hpp"
 #include "Prostorija.hpp"
 #include "Specijalizacija.hpp"
-using namespace std;
 
 int main()
 {
     return 0;
 }
+
+// Program za vodjenje bolnice.
