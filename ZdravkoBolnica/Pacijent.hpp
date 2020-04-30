@@ -10,11 +10,10 @@ int starost;
 poll a;
 Bolest b;
 public:
-    Pacijent(int x,poll musko1,tipBolesti z,podelaBolesti p):Bolest(z,p)
+    Pacijent(int x,poll g,tipBolesti z,podelaBolesti p):Bolest(z,p)
     {
          starost=x;
-         a=u;
-         b=z;
+         a=g;
     }
 
 };
