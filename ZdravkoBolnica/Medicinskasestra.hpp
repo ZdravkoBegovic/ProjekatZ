@@ -7,7 +7,7 @@ class MedicinskaSestra:public Osoblje
 private:
   Smena z;
 public:
-    MedicinskaSestra(Smena x,int j,pol p,int f):Osoblje(j,p,f)
+    MedicinskaSestra(Smena x,int j,pol p,int f,string a,string g):Osoblje(j,p,f,a,g)
     {
         z=x;
     }

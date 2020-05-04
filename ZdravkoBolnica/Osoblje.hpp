@@ -9,8 +9,10 @@ int starost;
 pol c;
 int godineRadnogIskustva;
 public:
-    Osoblje(int x,pol o,int n)
+    Osoblje(int x,pol o,int n,string h,string j)
     {
+        ime=h;
+        prezime=j;
         starost=x;
         c=o;
         godineRadnogIskustva=n;

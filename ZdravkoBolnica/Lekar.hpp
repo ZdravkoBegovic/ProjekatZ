@@ -3,15 +3,16 @@
 #include "Osoblje.hpp"
 #include "Specijalizacija.hpp"
 #include <iostream>
+#include "Specijalizacija.hpp"
 using namespace std;
 class Lekar: public Osoblje
 {
-private:
-    int brojradnihsati;
+protected:
+    Specijalizacija S;
 public:
-    Lekar(int u,int m,pol k,int l):Osoblje(m,k,l)
+    Lekar(OblastSpecijalizacije m,VrstaSpecijalizacije q,int m,pol k,int l,string a,string b):Osoblje(m,k,l,a,b),S(m,q)
     {
-        brojradnihsati=u;
+
     }
     void ispis (Lekar l)
     {
