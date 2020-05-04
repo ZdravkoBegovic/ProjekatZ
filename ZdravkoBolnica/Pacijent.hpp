@@ -15,6 +15,23 @@ public:
          starost=x;
          a=g;
     }
+    void citanje()
+    {
+        string linija;
+        ifstream fajl ("Fajl.txt");
+        if (fajl.is_open())
+        {
+            while ( getline (fajl,linija) )
+            {
+              cout<<linija<<endl;
+            }
+            fajl.close();
+
+        }
+
+        else
+            cout << "Fajl nije otvoren";
+    }
 
 };
 
