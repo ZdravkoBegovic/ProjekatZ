@@ -15,7 +15,7 @@ using namespace std;
 
 int main()
 {
-    Pacijent p(28,musko,Dijabetes,2,Laka,tableta);
+    Pacijent p(32,musko1,Dijabetes,21,Zarazna,kapsula);
     p.citanje();
     return 0;
 }

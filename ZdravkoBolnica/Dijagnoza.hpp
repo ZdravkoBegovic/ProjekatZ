@@ -9,7 +9,7 @@ private:
 public:
      Dijagnoza(StanjePacijenta p,tipBolesti v,podelaBolesti m,int d,vrstaLeka c):a(v,m,d,c)
     {
-       s=p
+       s=p;
     }
 };
 

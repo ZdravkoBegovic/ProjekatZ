@@ -1,7 +1,8 @@
 #ifndef PACIJENT_HPP_INCLUDED
 #define PACIJENT_HPP_INCLUDED
 #include "Bolest.hpp"
-enum poll{musko1,zensko1};
+#include <fstream>
+enum poll{musko1=1,zensko1};
 class Pacijent
 {
 private:

@@ -9,7 +9,7 @@ OblastSpecijalizacije o;
 VrstaSpecijalizacije v;
 
 public:
-     Specijalizacija(OblastSpecijalizacije a, VrstaSpecijalizacije b,)
+     Specijalizacija(OblastSpecijalizacije a, VrstaSpecijalizacije b)
     {
         o=a;
         v=b;
