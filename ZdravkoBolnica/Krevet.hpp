@@ -31,6 +31,14 @@ public:
            cout<<"Krevet je oslobodjen";
         }
     }
+    friend ostream&operator<<(ostream&izlaz,const Krevet& l)
+    {
+        izlaz<<"Krevet - ispis "<<endl;
+        izlaz<<"Stanje kreveta : "<<l.s<<endl;
+        izlaz<<"Velicina kreveta : "<<l.d<<endl;
+
+        return izlaz;
+    }
 };
 
 

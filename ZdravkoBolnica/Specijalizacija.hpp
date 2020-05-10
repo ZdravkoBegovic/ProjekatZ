@@ -14,6 +14,14 @@ public:
         o=a;
         v=b;
     }
+    friend ostream&operator<<(ostream&izlaz,const Specijalizacija& d)
+    {
+        izlaz<<"Specijalizacija- ispis"<<endl;
+        izlaz<<"Oblast specijalizacije je "<<d.o<<endl;
+        izlaz<<"Vrsta specijalizacije je "<<d.v<<endl;
+
+        return izlaz;
+    }
 };
 
 

@@ -17,6 +17,12 @@ int main()
 {
     Pacijent p(32,musko1,Dijabetes,21,Zarazna,kapsula);
     p.citanje();
+    Prostorija P(5,2,5,zauzet,veliki);
+    cout<<P;
+    Krevet K(zauzet,veliki);
+    cout<<K;
+    Specijalizacija S(Hirurgija,sirokaSpecijalizacija);
+    cout<< S;
     return 0;
 }
 
