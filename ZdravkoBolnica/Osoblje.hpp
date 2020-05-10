@@ -8,6 +8,7 @@ string ime,prezime;
 int starost;
 pol c;
 int godineRadnogIskustva;
+static int brojosoblja;
 public:
     Osoblje(int x,pol o,int n,string h,string j)
     {
@@ -16,6 +17,15 @@ public:
         starost=x;
         c=o;
         godineRadnogIskustva=n;
+        brojosoblja++;
+    }
+    ~Osoblje()
+    {
+        brojosoblja--;
+    }
+    int getbr()const
+    {
+        return brojosoblja;
     }
 };
 
