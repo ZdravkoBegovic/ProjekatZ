@@ -13,8 +13,11 @@ using namespace std;
 #include "Prostorija.hpp"
 #include "Specijalizacija.hpp"
 int Osoblje::brojosoblja=0;
+
 int main()
 {
+
+
     Pacijent p(32,musko1,Dijabetes,21,Zarazna,kapsula);
     p.citanje();
     Prostorija P(5,2,5,zauzet,veliki);

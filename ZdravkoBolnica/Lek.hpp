@@ -14,6 +14,13 @@ public:
         doza=x;
         s=y;
     }
+    friend ostream&operator<<(ostream&izlaz,const Lek& l)
+    {
+        izlaz<<"doza"<<l.doza<<endl;
+        izlaz<<"vrsta leka"<<p.s<<endl;
+        return izlaz;
+    }
+
 
 };
 

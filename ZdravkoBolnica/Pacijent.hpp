@@ -33,6 +33,23 @@ public:
         else
             cout << "Fajl nije otvoren";
     }
+    string getime()const
+    {
+        return ime;
+    }
+    string getprezime()const
+    {
+        return prezime;
+    }
+     friend ostream&operator<<(ostream&izlaz,const Pacijent& p)
+    {
+        izlaz<<"ime "<<p.ime<<endl;
+        izlaz<<"prezime "<<p.prezime<<endl;
+        izlaz<<"starost "<<p.k<<endl;
+        izlaz<<"pol"<<p.a<<endl;
+        izlaz<<"bolest"<<p.b<<endl;
+        return izlaz;
+    }
 
 };
 

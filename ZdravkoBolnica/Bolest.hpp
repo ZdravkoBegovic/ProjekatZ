@@ -15,6 +15,13 @@ public:
         a=v;
         p=m;
     }
+    friend ostream&operator<<(ostream&izlaz,const Bolest &b)
+    {
+        izlaz<<"tip bolesti"<<b.a<<endl;
+        izlaz<<"podela bolesti "<<b.p<<endl;
+        izlaz<<"lek"<<b.k<<endl;
+        return izlaz;
+    }
 };
 
 
