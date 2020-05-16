@@ -39,6 +39,10 @@ int main()
      P.listapacijenata();
      P.pretraga();
      P.listapacijenata();
+     Osoblje A (2,musko,12,"Mihail","Bajev");
+     MedicinskaSestra B (Druga,2,zensko,7,"Milica","D");
+     A.predstavi_se();
+     B.predstavi_se();
 
     return 0;
 }

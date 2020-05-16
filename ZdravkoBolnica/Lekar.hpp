@@ -18,6 +18,11 @@ public:
     {
         cout<<"imam"<<"godina staza"<<endl;
     }
+  /*   void predstavi_se()
+   {
+       Osoblje::pretstavi_se();
+       cout<<S;
+*/  // }
 };
 
 

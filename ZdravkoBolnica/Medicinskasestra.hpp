@@ -19,6 +19,11 @@ public:
        }
 
    }
+   void predstavi_se()
+   {
+       Osoblje::predstavi_se();
+       cout<<z;
+   }
 };
 
 #endif // MEDICINSKASESTRA_HPP_INCLUDED

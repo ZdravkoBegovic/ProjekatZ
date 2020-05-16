@@ -27,6 +27,13 @@ public:
     {
         return brojosoblja;
     }
+    virtual void predstavi_se()
+    {
+        cout<<"ja sam"<<ime<<endl;
+        cout<<"moje prezime je"<<prezime<<endl;
+        cout<<c<<endl;
+        cout<<godineRadnogIskustva<<endl;
+    }
 };
 
 
