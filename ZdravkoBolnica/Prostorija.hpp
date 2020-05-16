@@ -3,14 +3,14 @@
 #include <iostream>
 using namespace std;
 #include "Krevet.hpp"
-
+#include "Pacijent.hpp"
 class Prostorija
 {
 private:
 int brojKreveta;
 int brojSlobodnihKreveta;
 int brojZauzetihKreveta;
-vector<Pacijent>pacijenti;
+vector < Pacijent > pacijenti;
 Krevet K;
 public:
     Prostorija( int w, int n, int l, stanje h, velicina j):K(h,j)
@@ -42,7 +42,7 @@ friend ostream&operator<<(ostream&izlaz,const Prostorija& p)
                 cout << line1 <<" "<<line2<< " je otpusten" << endl;
                 return;
             }
-        cout << line <<" "<<line2<< " nije otpusten" << endl;
+        cout << line1 <<" "<<line2<< " nije otpusten" << endl;
     }
     void listapacijenata()
     {
@@ -54,7 +54,7 @@ friend ostream&operator<<(ostream&izlaz,const Prostorija& p)
          string line1,line2;
         cin>>line1>>line2;
         for(auto i = pacijenti.begin(); i != pacijenti.end(); i++)
-           if (i -> getIme() == line)
+           if (i -> getime() == line1 && i ->getprezime()==line2 )
             {
                 cout << *i << endl;
             }

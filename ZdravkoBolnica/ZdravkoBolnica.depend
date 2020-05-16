@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1589134310 source:c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\main.cpp
+1589669340 source:c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\main.cpp
 	<iostream>
+	<vector>
 	"Bolest.hpp"
 	"Cistacica.hpp"
 	"Dijagnoza.hpp"
@@ -13,10 +14,10 @@
 	"Prostorija.hpp"
 	"Specijalizacija.hpp"
 
-1588243080 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\bolest.hpp
+1589667962 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\bolest.hpp
 	"Lek.hpp"
 
-1588238791 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\lek.hpp
+1589668683 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\lek.hpp
 
 1588705914 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\cistacica.hpp
 	"Osoblje.hpp"
@@ -31,18 +32,19 @@
 	"Specijalizacija.hpp"
 	<iostream>
 
-1588596245 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\osoblje.hpp
+1589134996 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\osoblje.hpp
 
 1589134403 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\specijalizacija.hpp
 
 1588596244 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\medicinskasestra.hpp
 	"Osoblje.hpp"
 
-1588713403 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\pacijent.hpp
+1589669088 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\pacijent.hpp
 	"Bolest.hpp"
 	<fstream>
 
-1589134439 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\prostorija.hpp
+1589668889 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\prostorija.hpp
 	<iostream>
 	"Krevet.hpp"
+	"Pacijent.hpp"
 

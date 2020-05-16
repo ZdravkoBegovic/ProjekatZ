@@ -17,7 +17,7 @@ public:
     friend ostream&operator<<(ostream&izlaz,const Lek& l)
     {
         izlaz<<"doza"<<l.doza<<endl;
-        izlaz<<"vrsta leka"<<p.s<<endl;
+        izlaz<<"vrsta leka"<<l.s<<endl;
         return izlaz;
     }
 

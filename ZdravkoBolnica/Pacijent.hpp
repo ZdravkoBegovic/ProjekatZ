@@ -11,8 +11,10 @@ int starost;
 poll a;
 Bolest b;
 public:
-    Pacijent(int x,poll g,tipBolesti z,int d,podelaBolesti p, vrstaLeka v):b(z,p,d,v)
+    Pacijent(int x,poll g,tipBolesti z,int d,podelaBolesti p, vrstaLeka v,string I,string P):b(z,p,d,v)
     {
+        ime=I;
+        prezime=P;
          starost=x;
          a=g;
     }
@@ -45,7 +47,7 @@ public:
     {
         izlaz<<"ime "<<p.ime<<endl;
         izlaz<<"prezime "<<p.prezime<<endl;
-        izlaz<<"starost "<<p.k<<endl;
+        izlaz<<"starost "<<p.starost<<endl;
         izlaz<<"pol"<<p.a<<endl;
         izlaz<<"bolest"<<p.b<<endl;
         return izlaz;
