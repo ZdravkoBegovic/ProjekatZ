@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1589669340 source:c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\main.cpp
+1589670018 source:c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\main.cpp
 	<iostream>
 	<vector>
 	"Bolest.hpp"
@@ -27,16 +27,16 @@
 1589134402 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\krevet.hpp
 	<iostream>
 
-1588712362 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\lekar.hpp
+1589669970 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\lekar.hpp
 	"Osoblje.hpp"
 	"Specijalizacija.hpp"
 	<iostream>
 
-1589134996 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\osoblje.hpp
+1589670045 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\osoblje.hpp
 
 1589134403 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\specijalizacija.hpp
 
-1588596244 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\medicinskasestra.hpp
+1589670018 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\medicinskasestra.hpp
 	"Osoblje.hpp"
 
 1589669088 c:\users\drago\desktop\programi\git\projekatz\zdravkobolnica\pacijent.hpp
