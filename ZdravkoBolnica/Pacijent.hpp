@@ -10,6 +10,8 @@ string ime,prezime;
 int starost;
 poll a;
 Bolest b;
+static int pacijenti;
+
 public:
     Pacijent(int x,poll g,tipBolesti z,int d,podelaBolesti p, vrstaLeka v,string I,string P):b(z,p,d,v)
     {
@@ -17,6 +19,15 @@ public:
         prezime=P;
          starost=x;
          a=g;
+         pacijenti++;
+    }
+    int getbroj1 ()const
+    {
+        return pacijenti;
+    }
+    ~Pacijent()
+    {
+        pacijenti--;
     }
     void citanje()
     {
@@ -43,13 +54,24 @@ public:
     {
         return prezime;
     }
+    string davidimopol()const
+    {
+        string S;
+        switch(a)
+        {
+            case 1:S="musko";
+                    break;
+            case 2:S="zensko";
+                    break;
+        return S;
+        }
+    }
      friend ostream&operator<<(ostream&izlaz,const Pacijent& p)
     {
-        izlaz<<"ime "<<p.ime<<endl;
-        izlaz<<"prezime "<<p.prezime<<endl;
-        izlaz<<"starost "<<p.starost<<endl;
-        izlaz<<"pol"<<p.a<<endl;
-        izlaz<<"bolest"<<p.b<<endl;
+        izlaz<<"ime i prezime  "<<p.ime<<p.prezime<<endl;
+        izlaz<<p.starost<<"Godina"<<endl;
+        izlaz<<p.davidimopol()<<endl;
+        izlaz<<p.b;
         return izlaz;
     }
 

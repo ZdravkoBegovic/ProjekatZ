@@ -59,6 +59,17 @@ friend ostream&operator<<(ostream&izlaz,const Prostorija& p)
                 cout << *i << endl;
             }
     }
+      void upisi()
+    {
+            ofstream fajl;
+            fajl.open ("Fajl.txt", ios_base::app);
+            for(auto i = pacijenti.begin(); i != pacijenti.end(); i++)
+            {
+                fajl<<*i<<endl;
+            }
+
+            fajl.close();
+    }
 
 
 };

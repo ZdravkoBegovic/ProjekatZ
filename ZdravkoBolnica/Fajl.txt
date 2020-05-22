@@ -1,3 +1,19 @@
-Marko,Stefanovic,68 godina,musko,Dijabetes
-Filip, Marticstarost,24 godine,musko,Dijabetes
-Stefan Ilic,48 godina,musko,Dijabetes
+
+ime i prezime  MarkoJ
+32Godina
+musko
+tip bolestiDijabetes
+stanjeZarazna
+
+ime i prezime  MilicaC
+40Godina
+zensko
+tip bolestiDijabetes
+stanjeZarazna
+
+ime i prezime  DarijaM
+32Godina
+zensko
+tip bolestiDijabetes
+stanjeZarazna
+
