@@ -48,7 +48,7 @@
 	"Krevet.hpp"
 	"Pacijent.hpp"
 
-1590187388 source:c:\users\racunar\desktop\projekatz\zdravkobolnica\main.cpp
+1590191920 source:c:\users\racunar\desktop\projekatz\zdravkobolnica\main.cpp
 	<iostream>
 	<vector>
 	<fstream>
@@ -63,28 +63,29 @@
 	"Pacijent.hpp"
 	"Prostorija.hpp"
 	"Specijalizacija.hpp"
+	"Bolnica.hpp"
 
 1590187038 c:\users\racunar\desktop\projekatz\zdravkobolnica\bolest.hpp
 	"Lek.hpp"
 
 1590166875 c:\users\racunar\desktop\projekatz\zdravkobolnica\lek.hpp
 
-1590166875 c:\users\racunar\desktop\projekatz\zdravkobolnica\cistacica.hpp
+1590189189 c:\users\racunar\desktop\projekatz\zdravkobolnica\cistacica.hpp
 	"Osoblje.hpp"
 
-1590187672 c:\users\racunar\desktop\projekatz\zdravkobolnica\osoblje.hpp
+1590191684 c:\users\racunar\desktop\projekatz\zdravkobolnica\osoblje.hpp
 
 1590166875 c:\users\racunar\desktop\projekatz\zdravkobolnica\dijagnoza.hpp
 
 1590166875 c:\users\racunar\desktop\projekatz\zdravkobolnica\krevet.hpp
 	<iostream>
 
-1590166875 c:\users\racunar\desktop\projekatz\zdravkobolnica\lekar.hpp
+1590188662 c:\users\racunar\desktop\projekatz\zdravkobolnica\lekar.hpp
 	"Osoblje.hpp"
 	"Specijalizacija.hpp"
 	<iostream>
 
-1590166875 c:\users\racunar\desktop\projekatz\zdravkobolnica\specijalizacija.hpp
+1590188396 c:\users\racunar\desktop\projekatz\zdravkobolnica\specijalizacija.hpp
 
 1590166875 c:\users\racunar\desktop\projekatz\zdravkobolnica\medicinskasestra.hpp
 	"Osoblje.hpp"
@@ -93,8 +94,12 @@
 	"Bolest.hpp"
 	<fstream>
 
-1590172096 c:\users\racunar\desktop\projekatz\zdravkobolnica\prostorija.hpp
+1590190502 c:\users\racunar\desktop\projekatz\zdravkobolnica\prostorija.hpp
 	<iostream>
 	"Krevet.hpp"
 	"Pacijent.hpp"
+
+1590191845 c:\users\racunar\desktop\projekatz\zdravkobolnica\bolnica.hpp
+	"Prostorija.hpp"
+	"Osoblje.hpp"
 

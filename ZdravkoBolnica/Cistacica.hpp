@@ -10,6 +10,14 @@ public:
     {
         brojRadnihSati=b;
     }
+     friend ostream&operator<<(ostream&izlaz,const Cistacica& C)
+    {
+        izlaz<<"ime i prezime  "<<C.ime<<C.prezime<<endl;
+        izlaz<<C.starost<<"Godina"<<endl;
+        izlaz<<C.davidimopol()<<endl;
+        izlaz<<C.godineRadnogIskustva<<endl;
+        return izlaz;
+    }
 };
 
 

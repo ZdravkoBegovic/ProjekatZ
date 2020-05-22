@@ -9,7 +9,6 @@ int starost;
 pol c;
 int godineRadnogIskustva;
 static int brojosoblja;
-vector <Osoblje> svoosoblje;
 public:
     Osoblje(int x,pol o,int n,string h,string j)
     {
@@ -20,15 +19,7 @@ public:
         godineRadnogIskustva=n;
         brojosoblja++;
     }
-     void dodaj(Osoblje &O)
-    {
-        svoosoblje.push_back(O);
-    }
-    void ispisosoblja()
-    {
-         for(auto i = svoosoblje.begin(); i != svoosoblje.end(); i++)
-            cout<<*i;
-    }
+
     string getIme()const
     {
         return ime;
@@ -36,19 +27,6 @@ public:
     string getPrezime()const
     {
         return prezime;
-    }
-    void otpusti()
-    {
-        string line1,line2;
-        cin>>line1>>line2;
-        for(auto i = svoosoblje.begin(); i != svoosoblje.end(); i++)
-           if (i -> getIme() == line1 && i->getPrezime()==line2)
-            {
-                svoosoblje.erase(i);
-                cout << line1 <<" "<<line2<< " je otstranjen" << endl;
-                return;
-            }
-        cout << line1 <<" "<<line2<< " nije otstranjen" << endl;
     }
     ~Osoblje()
     {

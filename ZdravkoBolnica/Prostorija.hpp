@@ -19,6 +19,10 @@ public:
      brojSlobodnihKreveta=n;
      brojZauzetihKreveta=l;
     }
+    vector <Pacijent> getvektor()
+    {
+        return pacijenti;
+    }
 friend ostream&operator<<(ostream&izlaz,const Prostorija& p)
     {
         izlaz<<"Prostorija - ispis"<<endl;
@@ -27,49 +31,7 @@ friend ostream&operator<<(ostream&izlaz,const Prostorija& p)
         izlaz<<"Broj Zauzetih Kreveta : "<<p. brojZauzetihKreveta<<endl;
         return izlaz;
     }
-    void primi(Pacijent &P)
-    {
-        pacijenti.push_back(P);
-    }
-    void otpusti()
-    {
-        string line1,line2;
-        cin>>line1>>line2;
-        for(auto i = pacijenti.begin(); i != pacijenti.end(); i++)
-           if (i -> getime() == line1 && i->getprezime()==line2)
-            {
-                pacijenti.erase(i);
-                cout << line1 <<" "<<line2<< " je otpusten" << endl;
-                return;
-            }
-        cout << line1 <<" "<<line2<< " nije otpusten" << endl;
-    }
-    void listapacijenata()
-    {
-         for(auto i = pacijenti.begin(); i != pacijenti.end(); i++)
-            cout<<*i;
-    }
-    void pretraga()
-    {
-         string line1,line2;
-        cin>>line1>>line2;
-        for(auto i = pacijenti.begin(); i != pacijenti.end(); i++)
-           if (i -> getime() == line1 && i ->getprezime()==line2 )
-            {
-                cout << *i << endl;
-            }
-    }
-      void upisi()
-    {
-            ofstream fajl;
-            fajl.open ("Fajl.txt", ios_base::app);
-            for(auto i = pacijenti.begin(); i != pacijenti.end(); i++)
-            {
-                fajl<<*i<<endl;
-            }
 
-            fajl.close();
-    }
 
 
 };

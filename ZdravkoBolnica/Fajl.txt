@@ -1,19 +1,21 @@
 
-ime i prezime  MarkoJ
-32Godina
+ime i prezime  MJ
+12Godina
 musko
-tip bolestiDijabetes
-stanjeZarazna
+3
 
-ime i prezime  MilicaC
-40Godina
-zensko
-tip bolestiDijabetes
-stanjeZarazna
+ime i prezime  MihailBajev
+2Godina
+musko
+12
 
-ime i prezime  DarijaM
-32Godina
-zensko
-tip bolestiDijabetes
-stanjeZarazna
+ime i prezime  MJ
+12Godina
+musko
+3
+
+ime i prezime  MihailBajev
+4Godina
+musko
+12
 

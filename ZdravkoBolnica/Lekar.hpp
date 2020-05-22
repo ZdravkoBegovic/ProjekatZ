@@ -18,6 +18,17 @@ public:
     {
         cout<<"imam"<<"godina staza"<<endl;
     }
+
+     friend ostream&operator<<(ostream&izlaz,const Lekar& L)
+    {
+        izlaz<<"ime i prezime  "<<L.ime<<L.prezime<<endl;
+        izlaz<<L.starost<<"Godina"<<endl;
+        izlaz<<L.davidimopol()<<endl;
+        izlaz<<L.godineRadnogIskustva<<endl;
+        izlaz<<L.S<<endl;
+        return izlaz;
+    }
+
   /*   void predstavi_se()
    {
        Osoblje::pretstavi_se();

@@ -13,7 +13,7 @@ using namespace std;
 #include "Pacijent.hpp"
 #include "Prostorija.hpp"
 #include "Specijalizacija.hpp"
-
+#include "Bolnica.hpp"
 int Osoblje::brojosoblja=0;
 int Pacijent::pacijenti=0;
 void ideufajl()
@@ -24,6 +24,7 @@ void ideufajl()
     fajl<<s<<" "<<Pacijent::getbroj1<<" "<<m<<endl;
 
 }
+
 int main()
 {
 
@@ -35,19 +36,25 @@ int main()
      //ideufajl();
      Osoblje O(12,musko,3,"M","J");
    //  O.dodaj1()
+     Lekar L(Hirurgija,uskaSpecijalizacija,12,musko,3,"M","J");
+     Bolnica B(3,5,7,zauzet,veliki);
 
-     P.primi(p);
+     Cistacica C(2,4,musko,12,"Mihail","Bajev");
      //cout<<Pacijent::getbroj1;
-     P.primi(p2);
+
     // cout<<Pacijent::getbroj1;
-     P.primi(p3);
+
     // cout<<Pacijent::getbroj1;
      Osoblje A (2,musko,12,"Mihail","Bajev");
-     O.dodaj(O);
-     A.dodaj(A);
-     O.ispisosoblja();
-
-     P.upisi();
+     B.primi1(&O);
+     B.primi1(&A);
+     B.primi1(&L);
+     B.primi1(&C);
+     B.primi(p);
+     B.primi(p2);
+     B.primi(p3);
+     B.upisi();
+     B.upisi1();
     return 0;
 }
 

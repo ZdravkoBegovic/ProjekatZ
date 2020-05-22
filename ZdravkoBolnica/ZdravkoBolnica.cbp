@@ -33,6 +33,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Bolest.hpp" />
+		<Unit filename="Bolnica.hpp" />
 		<Unit filename="Cistacica.hpp" />
 		<Unit filename="Dijagnoza.hpp" />
 		<Unit filename="Fajl.txt" />
