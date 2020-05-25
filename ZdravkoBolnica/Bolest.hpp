@@ -30,8 +30,9 @@ public:
                     break;
         case 3:S1="Kozna bolest";
                     break;
-        return S1;
+
         }
+        return S1;
     }
     string davidimopodelu()const
     {
@@ -46,8 +47,9 @@ public:
                     break;
         case 4:S2="Nezarazna";
                     break;
-        return S2;
+
         }
+        return S2;
     }
     friend ostream&operator<<(ostream&izlaz,const Bolest &b)
     {

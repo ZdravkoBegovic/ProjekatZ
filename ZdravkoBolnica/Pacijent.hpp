@@ -63,8 +63,9 @@ public:
                     break;
             case 2:S="zensko";
                     break;
-        return S;
+
         }
+        return S;
     }
      friend ostream&operator<<(ostream&izlaz,const Pacijent& p)
     {

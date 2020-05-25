@@ -17,7 +17,7 @@ public:
     }
     void zauzmiKrevet()
     {
-        if(s=slobodan)
+        if(s==slobodan)
         {
            s=zauzet;
            cout<<"Krevet je zauzet";
@@ -25,7 +25,7 @@ public:
     }
     void oslobodiKrevet()
     {
-        if(s=zauzet)
+        if(s==zauzet)
         {
            s=slobodan;
            cout<<"Krevet je oslobodjen";

@@ -90,6 +90,7 @@ int main()
             bol=KoznaBolest;
             break;
         }
+        }
         cout<<"Kakva je bolest"<<endl;
         cout<<"1 zarazna"<<endl;
         cout<<"2 teska"<<endl;
@@ -97,6 +98,7 @@ int main()
         cout<<"4 nezarazna"<<endl;
         podelaBolesti pod;
         cin>>pom;
+
         switch(pom)
         {
         case 1:
@@ -159,9 +161,10 @@ int main()
         Pacijent pac(godine,pl,bol,doza,pod,llek,ime,prezime);
         cout<<pac<<endl;
         B.primi(pac);
+        B.upisi();
         }
         break;
-    }
+
     case 2:
     {
         cout<<"Ime"<<endl;
@@ -190,19 +193,19 @@ int main()
         }
         cin>>prom;
         Osoblje osoba(godine,l,rs,ime,prezime);
-        cout<<pac<<endl;
+        cout<<osoba<<endl;
         B.primi1(&osoba);
-        B.ispisosoblja();
+        B.upisi1();
         break;
     }
         case 3:
-            {
-               B.upisi1();
+            {return S;
+               B.listapacijenata();
                break;
             }
         case 4:
             {
-               B.upisi();
+               B.ispisosoblja();
                break;
             }
     }
