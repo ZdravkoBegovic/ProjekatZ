@@ -6,7 +6,6 @@ class Bolnica
 {
 private:
 Prostorija P1;
-//vector < Prostorija > prostorije;
 vector < Osoblje*> svosoblje;
 public:
     Bolnica(int a,int b,int c,stanje d,velicina e):P1(a,b,c,d,e)

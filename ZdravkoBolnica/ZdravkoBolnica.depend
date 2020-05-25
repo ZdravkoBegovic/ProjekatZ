@@ -48,7 +48,7 @@
 	"Krevet.hpp"
 	"Pacijent.hpp"
 
-1590191920 source:c:\users\racunar\desktop\projekatz\zdravkobolnica\main.cpp
+1590442636 source:c:\users\racunar\desktop\projekatz\zdravkobolnica\main.cpp
 	<iostream>
 	<vector>
 	<fstream>
@@ -99,7 +99,7 @@
 	"Krevet.hpp"
 	"Pacijent.hpp"
 
-1590191845 c:\users\racunar\desktop\projekatz\zdravkobolnica\bolnica.hpp
+1590441342 c:\users\racunar\desktop\projekatz\zdravkobolnica\bolnica.hpp
 	"Prostorija.hpp"
 	"Osoblje.hpp"
 
