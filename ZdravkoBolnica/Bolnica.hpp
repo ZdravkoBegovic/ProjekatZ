@@ -66,7 +66,7 @@ public:
        void upisi1()
     {
             ofstream fajl;
-            fajl.open ("Fajl.txt", ios_base::app);
+            fajl.open ("Fajlosoblje.txt", ios_base::app);
             for(auto i = svosoblje.begin(); i != svosoblje.end(); i++)
             {
                 fajl<<**i<<endl;

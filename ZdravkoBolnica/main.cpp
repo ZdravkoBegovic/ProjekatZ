@@ -157,9 +157,10 @@ int main()
         }
         }
         Pacijent pac(godine,pl,bol,doza,pod,llek,ime,prezime);
+        cout<<pac<<endl;
         B.primi(pac);
-        break;
         }
+        break;
     }
     case 2:
     {
@@ -189,7 +190,9 @@ int main()
         }
         cin>>prom;
         Osoblje osoba(godine,l,rs,ime,prezime);
+        cout<<pac<<endl;
         B.primi1(&osoba);
+        B.ispisosoblja();
         break;
     }
         case 3:

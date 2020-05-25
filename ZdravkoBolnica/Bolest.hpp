@@ -22,7 +22,7 @@ public:
     string davidimotip()const
     {
         string S1;
-        switch(p)
+        switch(a)
         {
         case 1:S1="Dijabetes";
                     break;
@@ -36,7 +36,7 @@ public:
     string davidimopodelu()const
     {
         string S2;
-        switch(a)
+        switch(p)
         {
         case 1:S2="Zarazna";
                     break;
