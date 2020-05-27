@@ -22,9 +22,9 @@ public:
      friend ostream&operator<<(ostream&izlaz,const Lekar& L)
     {
         izlaz<<"ime i prezime  "<<L.ime<<L.prezime<<endl;
-        izlaz<<L.starost<<"Godina"<<endl;
-        izlaz<<L.davidimopol()<<endl;
-        izlaz<<L.godineRadnogIskustva<<endl;
+        izlaz<<L.starost<<" Godina"<<endl;
+        izlaz<<L.davidimopoll()<<endl;
+        izlaz<<L.godineRadnogIskustva<<"godina radnog staza"<<endl;
         izlaz<<L.S<<endl;
         return izlaz;
     }

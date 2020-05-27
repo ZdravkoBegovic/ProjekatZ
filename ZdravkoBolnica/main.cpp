@@ -27,25 +27,29 @@ void ideufajl()
 
 int main()
 {
+    int broj;
     Bolnica B(3,5,7,zauzet,veliki);
     Prostorija P(5,2,5,zauzet,veliki);
-    cout<<"1 primanje novog pacijenta "<<endl;
-    cout<<"2 primanje osoblja"<<endl;
-    cout<<"3 ispisi pacijente"<<endl;
-    cout<<"4 ispisi osoblje"<<endl;
+    do
+    {
+    cout<<"1 Primanje novog pacijenta "<<endl;
+    cout<<"2 Primanje osoblja"<<endl;
+    cout<<"3 Ispis pacijenta"<<endl;
+    cout<<"4 Ispis osoblja"<<endl;
+    cout<<"5 Otpustanje"<<endl;
+    cout<<"6 Pretraga pacijenta"<<endl;
+    cout<<"Unesite 0 za izlazak"<<endl;
 
-    cout<<"unesite 0 za izlazak"<<endl;
-    int broj;
     cin>>broj;
     switch(broj)
     {
     case 1:
     {
         int pom;
-        cout<<"Koliko primljena osoba ima godina"<<endl;
+        cout<<"Koliko primljena osoba ima godina?"<<endl;
         int godine;
         cin>>godine;
-        cout<<"Koji je pol te osobe"<<endl;
+        cout<<"Koji je pol osobe?"<<endl;
         poll pl;
         cout<<"musko"<<"1"<<endl;
         cout<<"zensko"<<"2"<<endl;
@@ -59,15 +63,15 @@ int main()
             pl=zensko1;
             break;
         }
-        cout<<"Koje je ime pacijenta"<<endl;
+        cout<<"Koje je ime pacijenta?"<<endl;
         string ime,prezime;
         cin>>ime;
-        cout<<"koje je prezime pacijenta"<<endl;
+        cout<<"Koje je prezime pacijenta?"<<endl;
         cin>>prezime;
-        cout<<"kolika je doza leka"<<endl;
+        cout<<"Kolika je doza leka?"<<endl;
         int doza;
         cin>>doza;
-        cout<<"od cega paacijent boluje"<<endl;
+        cout<<"Od cega pacijent boluje?"<<endl;
         tipBolesti bol;
         cout<<"Dijabetes"<<"1"<<endl;
         cout<<"Bolest srca"<<"2"<<endl;
@@ -91,7 +95,7 @@ int main()
             break;
         }
         }
-        cout<<"Kakva je bolest"<<endl;
+        cout<<"Kakva je bolest?"<<endl;
         cout<<"1 zarazna"<<endl;
         cout<<"2 teska"<<endl;
         cout<<"3 laka"<<endl;
@@ -123,7 +127,7 @@ int main()
         }
         }
         vrstaLeka llek;
-        cout<<"koja je vrsta leka"<<endl;
+        cout<<"Koja je vrsta leka?"<<endl;
         cout<<"1 tableta"<<endl;
         cout<<"2 kapi"<<endl;
         cout<<"3 sirup"<<endl;
@@ -160,28 +164,29 @@ int main()
         }
         Pacijent pac(godine,pl,bol,doza,pod,llek,ime,prezime);
         cout<<pac<<endl;
-        B.primi(pac);
-        B.upisi();
+        P.primi(pac);
+        P.upisi();
         }
         break;
 
     case 2:
     {
-        cout<<"Ime"<<endl;
+        cout<<"Koje je ime zaposlene osobe?"<<endl;
         string ime,prezime;
         cin>>ime;
-        cout<<"Prezime"<<endl;
+        cout<<"Koje je prezime zaposlene osobe?"<<endl;
         cin>>prezime;
         int godine;
-        cout<<"Koliko zaposleni ima godina"<<endl;
+        cout<<"Koliko zaposlena osoba ima godina?"<<endl;
         cin>>godine;
         int rs;
-        cout<<"Koliko zaposleni ima godina radnog staza"<<endl;
+        cout<<"Koliko zaposlena osoba ima godina radnog staza?"<<endl;
         cin>>rs;
         pol l;
-        cout<<"musko"<<"1"<<endl;
-        cout<<"zensko"<<"2"<<endl;
+        cout<<"musko"<<" 1"<<endl;
+        cout<<"zensko"<<" 2"<<endl;
         int prom;
+        cin>>prom;
         switch(prom)
         {
         case 1:
@@ -191,7 +196,6 @@ int main()
             l=zensko;
             break;
         }
-        cin>>prom;
         Osoblje osoba(godine,l,rs,ime,prezime);
         cout<<osoba<<endl;
         B.primi1(&osoba);
@@ -199,8 +203,8 @@ int main()
         break;
     }
         case 3:
-            {return S;
-               B.listapacijenata();
+            {
+               P.listapacijenata();
                break;
             }
         case 4:
@@ -208,7 +212,34 @@ int main()
                B.ispisosoblja();
                break;
             }
+        case 5:
+            {
+                int a;
+                cout<<"1 Pacijenta"<<endl;
+                cout<<"2 Osoblja"<<endl;
+                cin>>a;
+                if(a==1)
+                {
+                cout<<"unesite ime pacijenta kog zelite da otpustite a zatim i njegovo prezime u zadata polja"<<endl;
+                P.otpusti();
+                }
+                else
+                {
+                cout<<"unesite ime pacijenta kog zelite da otpustite a zatim i njegovo prezime u zadata polja"<<endl;
+                B.otpusti1();
+                }
+                break;
+
+            }
+        case 6:
+            {
+              cout<<"unesite ime pacijenta kog zelite da pronadjete a zatim i njegovo prezime u zadata polja"<<endl;
+              P.pretraga();
+              break;
+            }
     }
+
+    }while(broj!=0);
     return 0;
 }
 

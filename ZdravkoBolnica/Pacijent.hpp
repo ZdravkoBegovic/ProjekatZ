@@ -54,6 +54,7 @@ public:
     {
         return prezime;
     }
+
     string davidimopol()const
     {
         string S;
@@ -69,8 +70,8 @@ public:
     }
      friend ostream&operator<<(ostream&izlaz,const Pacijent& p)
     {
-        izlaz<<"ime i prezime  "<<p.ime<<p.prezime<<endl;
-        izlaz<<p.starost<<"Godina"<<endl;
+        izlaz<<"ime i prezime  "<<p.ime<<" "<<p.prezime<<endl;
+        izlaz<<p.starost<<" Godina"<<endl;
         izlaz<<p.davidimopol()<<endl;
         izlaz<<p.b;
         return izlaz;

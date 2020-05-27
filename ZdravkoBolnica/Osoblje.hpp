@@ -43,25 +43,21 @@ public:
         cout<<c<<endl;
         cout<<godineRadnogIskustva<<endl;
     }
-     string davidimopol()const
+     string davidimopoll()const
     {
-        string S;
-        switch(c)
+        if(c==musko)
         {
-            case 1:S="musko";
-                    break;
-            case 2:S="zensko";
-                    break;
-
+            return "musko";
         }
-         return S;
+        else return "zensko";
+
     }
       friend ostream&operator<<(ostream&izlaz,const Osoblje& O)
     {
-        izlaz<<"ime i prezime  "<<O.ime<<O.prezime<<endl;
-        izlaz<<O.starost<<"Godina"<<endl;
-        izlaz<<O.davidimopol()<<endl;
-        izlaz<<O.godineRadnogIskustva<<endl;
+        izlaz<<"ime i prezime  "<<O.ime<<" "<<O.prezime<<endl;
+        izlaz<<O.starost<<" Godina"<<endl;
+        izlaz<<O.davidimopoll()<<endl;
+        izlaz<<O.godineRadnogIskustva<<" Godina radnog staza"<<endl;
         return izlaz;
     }
 

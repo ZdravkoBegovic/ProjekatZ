@@ -14,7 +14,7 @@ public:
     {
         izlaz<<"ime i prezime  "<<C.ime<<C.prezime<<endl;
         izlaz<<C.starost<<"Godina"<<endl;
-        izlaz<<C.davidimopol()<<endl;
+        izlaz<<C.davidimopoll()<<endl;
         izlaz<<C.godineRadnogIskustva<<endl;
         return izlaz;
     }

@@ -37,6 +37,7 @@
 		<Unit filename="Cistacica.hpp" />
 		<Unit filename="Dijagnoza.hpp" />
 		<Unit filename="Fajl.txt" />
+		<Unit filename="Fajlosoblje.txt" />
 		<Unit filename="Krevet.hpp" />
 		<Unit filename="Lek.hpp" />
 		<Unit filename="Lekar.hpp" />

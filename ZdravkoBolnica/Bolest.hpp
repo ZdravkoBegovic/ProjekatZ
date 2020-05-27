@@ -53,10 +53,11 @@ public:
     }
     friend ostream&operator<<(ostream&izlaz,const Bolest &b)
     {
-        izlaz<<"tip bolesti";
+        izlaz<<"tip bolesti ";
         izlaz<<b.davidimotip()<<endl;
-        izlaz<<"stanje";
+        izlaz<<"stanje ";
         izlaz<<b.davidimopodelu()<<endl;
+        izlaz<<b.k;
         return izlaz;
     }
 };

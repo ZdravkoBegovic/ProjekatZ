@@ -16,57 +16,14 @@ public:
     {
         return svosoblje;
     }
-    void primi(Pacijent &P)
-    {
-        P1.getvektor().push_back(P);
-    }
     void primi1(Osoblje* O)
     {
         svosoblje.push_back(O);
     }
-    void otpusti()
-    {
-        string line1,line2;
-        cin>>line1>>line2;
-        for(auto i = P1.getvektor().begin(); i != P1.getvektor().end(); i++)
-           if (i -> getime() == line1 && i->getprezime()==line2)
-            {
-                P1.getvektor().erase(i);
-                cout << line1 <<" "<<line2<< " je otpusten" << endl;
-                return;
-            }
-        cout << line1 <<" "<<line2<< " nije otpusten" << endl;
-    }
-    void listapacijenata()
-    {
-         for(auto i = P1.getvektor().begin(); i != P1.getvektor().end(); i++)
-            cout<<*i;
-    }
-     void pretraga()
-    {
-         string line1,line2;
-        cin>>line1>>line2;
-        for(auto i = P1.getvektor().begin(); i != P1.getvektor().end(); i++)
-           if (i -> getime() == line1 && i ->getprezime()==line2 )
-            {
-                cout << *i << endl;
-            }
-    }
-      void upisi()
-    {
-            ofstream fajl;
-            fajl.open ("Fajl.txt", ios_base::app);
-            for(auto i = P1.getvektor().begin(); i != P1.getvektor().end(); i++)
-            {
-                fajl<<*i<<endl;
-            }
-
-            fajl.close();
-    }
        void upisi1()
     {
             ofstream fajl;
-            fajl.open ("Fajlosoblje.txt", ios_base::app);
+            fajl.open ("Fajlosoblje.txt");
             for(auto i = svosoblje.begin(); i != svosoblje.end(); i++)
             {
                 fajl<<**i<<endl;
@@ -82,7 +39,10 @@ public:
      void otpusti1()
     {
         string line1,line2;
-        cin>>line1>>line2;
+        cout<<"ime :"<<endl;
+        cin>>line1;
+        cout<<"prezime :"<<endl;
+        cin>>line2;
         for(auto i = svosoblje.begin(); i != svosoblje.end(); i++)
            if ((*i) -> getIme() == line1 && (*i)->getPrezime()==line2)
             {
